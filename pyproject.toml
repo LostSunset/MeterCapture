@@ -1,0 +1,11 @@
+[project]
+name = "41-metercapture"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=2.4.4",
+    "opencv-python>=4.13.0.92",
+    "pyside6>=6.11.0",
+    "rapidocr-onnxruntime>=1.4.4",
+]
