@@ -16,6 +16,9 @@ wheels/
 # OCR sweep / dev artifacts (keep the test video, drop the rest)
 examples/_*
 
+# CSV outputs from the app
+*.csv
+
 # OS / editor
 .DS_Store
 Thumbs.db

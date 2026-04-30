@@ -21,6 +21,14 @@ Reference test asset: `examples/影片辨識測試影片.mp4` (~30 s, 24 fps, 72
 | `meter_capture/video_view.py` | `QGraphicsView` plus draggable/resizable `RoiItem`. |
 | `meter_capture/ocr_worker.py` | RapidOCR `QThread` worker (rec-only). |
 
+## Further reading (read before deep changes)
+
+- `docs/architecture.md` — module map, data flow, threading model, coordinate systems.
+- `docs/ocr-investigation.md` — why rec-only beats det+rec on tight LCDs (with empirical sweep). **Read before touching `ocr_worker.py`.**
+- `docs/roadmap.md` — current goals and open questions.
+- `docs/sessions/` — per-session worklogs.
+- `MEMORY.md` — long-lived project knowledge / invariants / known gotchas.
+
 ## Architectural rules
 
 - **No torch / no paddle in runtime deps.** Stay on `rapidocr-onnxruntime`.

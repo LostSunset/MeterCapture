@@ -2,6 +2,31 @@
 
 Append-only log of shipped changes. See `CLAUDE.md` for rules.
 
+## 2026-04-30 — v0.1.0 release: docs, README, MEMORY, session log (@LostSunset)
+
+**What:**
+- Added `README.md` (quick-start, features, project layout, contributing pointer).
+- Added `docs/architecture.md`, `docs/ocr-investigation.md`, `docs/roadmap.md`, `docs/sessions/2026-04-30.md`.
+- Added `MEMORY.md` capturing project invariants and empirical lessons (rec-only OCR, no torch, harmful preprocess list).
+- Updated `CLAUDE.md` with a "Further reading" section pointing to `docs/`.
+- `.gitignore` now also excludes `*.csv` outputs.
+- Tagged `v0.1.0` and cut the first GitHub Release.
+
+**Why:** Inaugural public release — give contributors enough context to land code without re-deriving decisions from this session.
+
+**Verified:**
+- `git log` shows clean initial + release commits on `main`.
+- `gh release view v0.1.0` shows the release with auto-generated notes plus our description.
+- `uv run python main.py` still launches without error after the metadata-only changes.
+
+**Files:**
+- `README.md`, `MEMORY.md`, `CLAUDE.md`
+- `docs/architecture.md`, `docs/ocr-investigation.md`, `docs/roadmap.md`
+- `docs/sessions/2026-04-30.md`
+- `.gitignore`, `DEVLOG.md`
+
+**PR/commit:** `v0.1.0` tag
+
 ## 2026-04-30 — Initial app: video → ROI → OCR → CSV (@LostSunset)
 
 **What:**
